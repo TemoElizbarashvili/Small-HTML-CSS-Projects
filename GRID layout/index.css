@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.challange {
+    height: 90vh;
+    width: 1300px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 18%;
+    grid-template-rows: 10% repeat(3, 1fr) 10%;
+    gap: 30px;
+}
+
+.item {
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: red;
+    border-radius: 4px;
+    padding: 30px 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+}
+
+.sidebar {
+    grid-column: 4 / 5;
+    grid-row: 2 / 5; 
+}
+
+.main-content {
+    grid-column: 1 / 4;
+    grid-row: 3 / 5; 
+}
+
+.footer { 
+    grid-column: 1 / 5;
+    grid-row: 5 / 6;
+}
